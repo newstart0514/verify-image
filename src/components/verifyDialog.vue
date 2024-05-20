@@ -1,6 +1,6 @@
 <template>
   <el-dialog
-    v-model="show"
+    v-model="props.value"
     :title="props.title"
     :width="props.width"
     center
@@ -55,7 +55,6 @@ const props = defineProps({
 });
 const emit = defineEmits();
 
-const show = ref(true);
 const sliderValue = ref(0)
 const angle = ref(0)
 const imageUrl = ref('')
